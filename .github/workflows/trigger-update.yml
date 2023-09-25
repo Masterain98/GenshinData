@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Trigger API
         env:
-          PURGE_URL: ${{ secrets.UPDATE_URL }}
+          UPDATE_URL: ${{ secrets.UPDATE_URL }}
         run: |
           curl $UPDATE_URL
